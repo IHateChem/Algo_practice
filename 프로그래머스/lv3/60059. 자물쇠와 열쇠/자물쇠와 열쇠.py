@@ -24,8 +24,9 @@ def getspine(key):
     return spine
 def getpossible(key, x, y):
     spines = getspine(key)
-    endx = x - min(map(lambda t:t[0], spines)); endy =  y - min(map(lambda t:t[1], spines))
-    startx = -1 * max(map(lambda t: t[0], spines)); starty=  -1* max(map(lambda t: t[1], spines))
+    f = lambda t: t[i]; i = 0
+    endx = x - min(map(f, spines)); startx = -1 * max(map(f, spines)); i = 1
+    endy =  y - min(map(f, spines));starty=  -1* max(map(f, spines))
     ret = []
     for i in range(startx, endx):
         for j in range(starty, endy):
