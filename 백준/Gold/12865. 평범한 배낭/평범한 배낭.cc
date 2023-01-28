@@ -19,7 +19,6 @@ int main() {
 		cin >> w >> v;
 		A.push_back(tuple<int, int>(w, v));
 	}
-	sort(A.begin(), A.end(), compare);
 	for (int k = 1; k <K+1; k++) {
 		for (int i = 1; i < N+1; i++) {
 			if (get<0>(A[i - 1]) == k) {
