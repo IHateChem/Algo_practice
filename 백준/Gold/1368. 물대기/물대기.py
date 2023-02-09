@@ -1,5 +1,4 @@
 import sys
-from collections import defaultdict as dd
 import heapq
 input=sys.stdin.readline
 N=int(input())
@@ -9,15 +8,6 @@ for _ in range(N):
 P = []
 for _ in range(N):
     P.append(map(int,input().split()))
-answer = 1e8
-'''for i in W:
-    visited = [0]*N
-    visited[i[1]]=1
-    t_answer = i[0]
-    stack = []
-    for j in W:
-        if j != i: heapq.heappush(stack)
-    stack.'''
 visited = [0]*N
 ispushed = [[0]*N for _ in range(N)]
 stack = []
