@@ -11,14 +11,15 @@ for _ in range(M):
 INF = 1e6
 go_dist = [INF for _ in range(N+1)]
 back_dist = [INF for _ in range(N+1)]
+go_dist[X]=0;back_dist[X]=0
 def dijk(graph, dist):
     stack = [(0, X)]
     while stack:
         tot_w, u = heapq.heappop(stack)
-        if dist[u] <= tot_w: continue
-        dist[u] = tot_w
+        if dist[u] < tot_w: continue
         for v, w in graph[u]:
             if dist[v] > tot_w+w:
+                dist[v]=tot_w+w
                 heapq.heappush(stack, (tot_w+w, v))
 dijk(go_graph, go_dist)
 dijk(back_graph, back_dist)
