@@ -1,0 +1,5 @@
+k = int(input())
+k2binary = bin(k+1)
+table1 = str.maketrans("0","4")
+table2 = str.maketrans("1",'7')
+print(k2binary.translate(table1).translate(table2)[3:])
