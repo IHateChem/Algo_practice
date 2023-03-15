@@ -1,3 +1,4 @@
+#맵제한이 문제와 다른듯, 50이 아니라 102로 했더니 런타임 오류없이 통과
 N = 102
 def isin(rectangle, x, y, dx, dy):
     b4_after =  [(x-dx, y-dy), (x, y)]
