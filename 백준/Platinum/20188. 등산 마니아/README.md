@@ -4,11 +4,11 @@
 
 ### 성능 요약
 
-메모리: 139372 KB, 시간: 1472 ms
+메모리: 79056 KB, 시간: 800 ms
 
 ### 분류
 
-깊이 우선 탐색(dfs), 다이나믹 프로그래밍(dp), 트리에서의 다이나믹 프로그래밍(dp_tree), 그래프 이론(graphs), 그래프 탐색(graph_traversal), 수학(math), 트리(trees)
+깊이 우선 탐색, 다이나믹 프로그래밍, 트리에서의 다이나믹 프로그래밍, 그래프 이론, 그래프 탐색, 수학, 트리
 
 ### 문제 설명
 
@@ -22,11 +22,11 @@
 
 <p>아래 그림은 2번 오두막에서 7번 오두막으로 가는 가장 짧은 길을 보여준다.</p>
 
-<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/eeb25e07-2313-4eeb-8b94-7395d7724d0b/-/preview/" style="width: 355px; height: 232px;"></p>
+<p style="text-align: center;"><img alt="" src="" style="width: 355px; height: 232px;"></p>
 
 <p>아래 그림은 2번 오두막에서 7번 오두막으로, 정상을 거쳐서 가는 가장 짧은 길을 보여 준다.</p>
 
-<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/28038a0d-0133-4bd3-94c9-c179e917ff1f/-/preview/" style="width: 362px; height: 232px;"></p>
+<p style="text-align: center;"><img alt="" src="" style="width: 362px; height: 232px;"></p>
 
 <p>등산로의 구성을 입력으로 받아 모든 가능한 i, j의 쌍에 대해서(1 ≤ i < j ≤ N), 철수가 i번 오두막에서 j번 오두막으로 가는 길의 다양성의 총 합을 계산하는 프로그램을 작성하라.</p>
 

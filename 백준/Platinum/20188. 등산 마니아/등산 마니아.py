@@ -1,6 +1,8 @@
 import sys
-sys.setrecursionlimit(600000)
+from itertools import combinations as C
+
 input = sys.stdin.readline
+
 N = int(input())
 graph = [[] for _ in range(N+1)] 
 child =  [0 for _ in range(N+1)] 
@@ -9,7 +11,6 @@ for _ in range(N-1):
     graph[a].append(b)
     graph[b].append(a)
 visited = [0] *(N+1); visited[1] = 1
-nc2 = N*(N-1)//2
 def dfs(node):
     n = 1
     for next in graph[node]:
@@ -21,5 +22,7 @@ def dfs(node):
 answer = 0
 dfs(1)
 for n in child:
-    answer += nc2 - (N-n) * (N-n-1)//2 
+    if n >=2 :
+        answer += n*(n-1)//2
+    answer += n * (N-n)
 print(answer-child[1]*(child[1]-1)//2)
