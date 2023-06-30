@@ -18,15 +18,15 @@
 
 <p>아래 그림은 가능한 하나의 상황을 보여 준다. 산 정상에 1번 오두막이 있고 3번 오두막과 4번 오두막이 오솔길로 이어져 있다.</p>
 
-<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/12b4c39d-c5cc-47ec-9bed-88696fa063ea/-/preview/" style="width: 338px; height: 253px;"></p>
+<p style="text-align: center;"><img alt="" src="" style="width: 338px; height: 253px;"></p>
 
 <p>아래 그림은 2번 오두막에서 7번 오두막으로 가는 가장 짧은 길을 보여준다.</p>
 
-<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/eeb25e07-2313-4eeb-8b94-7395d7724d0b/-/preview/" style="width: 355px; height: 232px;"></p>
+<p style="text-align: center;"><img alt="" src="" style="width: 355px; height: 232px;"></p>
 
 <p>아래 그림은 2번 오두막에서 7번 오두막으로, 정상을 거쳐서 가는 가장 짧은 길을 보여 준다.</p>
 
-<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/28038a0d-0133-4bd3-94c9-c179e917ff1f/-/preview/" style="width: 362px; height: 232px;"></p>
+<p style="text-align: center;"><img alt="" src="" style="width: 362px; height: 232px;"></p>
 
 <p>등산로의 구성을 입력으로 받아 모든 가능한 i, j의 쌍에 대해서(1 ≤ i < j ≤ N), 철수가 i번 오두막에서 j번 오두막으로 가는 길의 다양성의 총 합을 계산하는 프로그램을 작성하라.</p>
 
