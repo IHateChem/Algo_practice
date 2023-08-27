@@ -1,6 +1,6 @@
 # [level 3] 고고학 최고의 발견 - 131702 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131702?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131702) 
 
 ### 성능 요약
 
