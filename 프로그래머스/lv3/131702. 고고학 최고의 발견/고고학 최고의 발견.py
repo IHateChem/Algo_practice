@@ -1,3 +1,5 @@
+#완전아슬아슬하게 통과
+#C++이 차라리 편할듯?
 from itertools import product
 def rotate(clock, i,j,r):
     neighbors = [(x,y) for x,y in ((i,j),(i-1,j),(i+1,j),(i,j-1),(i,j+1)) if 0<=x<len(clock) and 0<=y<len(clock)]
