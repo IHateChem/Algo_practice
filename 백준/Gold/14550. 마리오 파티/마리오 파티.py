@@ -8,15 +8,21 @@ try:
         while len(MAP)<N:
             MAP.extend(list(map(int,input().split())))
         MAP += [0]
-        dp = [[0] + [INF] *N + [INF] for _ in range(T+1)]
+        dp = [0] + [INF] *N + [INF]
         next = set([(0,0)])
         t = set()
-        for i in range(T):
-            for j in range(i,N+1):
-                for k in range(S):
-                    if j+k > N: break
-                    dp[i+1][j+k+1] = max(dp[i][j]+MAP[j+k], dp[i+1][j+k+1])
-        print(dp[-1][-1])
+        for _ in range(T):
+            while next:
+                score, s = next.pop()
+                for i in range(S):
+                    if s+i+1>N+1: break
+                    if dp[s+i+1] < score + MAP[s+i]:
+                        dp[s+i+1] = score + MAP[s+i]
+                        t.add(s+i+1)
+            for i in t:
+                next.add((dp[i], i))
+            t = set()
+        print(dp[-1])
 except :
     pass
     
