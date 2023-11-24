@@ -18,7 +18,7 @@
 
 <p>4*N 크기의 타일을 2*1, 1*2 크기의 도미노로 완전히 채우려고 한다. 예를 들어 4*2 타일을 채우는 방법은 다음과 같이 5가지가 있다.</p>
 
-<p style="text-align: center;"><img alt="" src="https://www.acmicpc.net/upload/images/Screen%20Shot%202012-10-06%20at%20%EC%98%A4%EC%A0%84%206_10_09.png"></p>
+<p style="text-align: center;"><img alt="" src=""></p>
 
 <p>N이 주어졌을 때, 타일을 채우는 방법의 개수를 출력하는 프로그램을 작성하시오.</p>
 
