@@ -1,10 +1,11 @@
+#bfs
 import sys
 sys.setrecursionlimit(3000000)
 input = sys.stdin.readline
 answer = 0
 m,n = map(int,input().split())
 MAP = [list(map(int,input().strip())) for _ in range(m)]
-fungus = sorted([(MAP[i][j], i, j) for i in range(m) for j in range(n) if MAP[i][j]], reverse=True)
+fungus = [(MAP[i][j], i, j) for i in range(m) for j in range(n) if MAP[i][j]]
 inbound = lambda x, y: 0<=x<m and  0<=y<n
 t = []
 def bfs(i, j, visited):
@@ -32,7 +33,7 @@ while fungus:
     v, r, c = fungus.pop()
     for i in range(2*v+1):
         for j in range(2*v+1):
-            if inbound(r-v+i, c-v+j) and MAP[r-v+i][c-v+j]<v:
+            if inbound(r-v+i, c-v+j) and MAP[r-v+i][c-v+j] < v:
                 MAP[r-v+i][c-v+j] = v
                 t.append((v, r-v+i, c-v+j))
     if not fungus:
@@ -40,5 +41,5 @@ while fungus:
         if check():
             print(answer)
             break
-        fungus = sorted(t, reverse=True)
+        fungus = t
         t = []
