@@ -1,0 +1,1 @@
+print("".join(sorted(set([input().strip() + "\n" for _ in range(int(input()))]), key=lambda t: (len(t), t))))
