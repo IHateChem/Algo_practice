@@ -6,6 +6,11 @@ preSum = [0] * N
 for i in range(N):
     preSum[i] = preSum[i-1] + numbers[i]
 n = sum(numbers)//4
+nonZeroLastIdx = N-1
+for i in range(N-1, -1, -1):
+    if numbers[i] != 0:
+        nonZeroLastIdx = i
+        break
 dp = [[0]* 4 for _ in range(N)]
 if sum(numbers) % 4 != 0:
     print(0)
@@ -21,4 +26,4 @@ for i in range(N):
                 dp[i][j] = dp[i-1][j] + 1
             else: dp[i][j] = dp[i-1][j-1] + dp[i-1][j]
         else: dp[i][j] = dp[i-1][j]
-print(dp[-1][-1])
+print(dp[nonZeroLastIdx][-1])
